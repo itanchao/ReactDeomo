@@ -1,7 +1,8 @@
 var CommentBox = React.createClass({
   loadCommentsFromServer:function(){
     var nowstr = new Date()
-    var urlstr = this.props.url + "?a="+ nowstr.toString();
+    // var urlstr = this.props.url + "?a="+ nowstr.toString();
+    var urlstr = this.props.url;
     $.ajax({
       url:urlstr,
       dataType:'json',
@@ -22,14 +23,35 @@ var CommentBox = React.createClass({
   componentDidMount:function(){
     console.log("componentDidMount");
     this.loadCommentsFromServer();
-    setInterval(this.loadCommentsFromServer,this.props.pulltime);
+    // setInterval(this.loadCommentsFromServer,this.props.pulltime);
+  },
+  handleCommentSubmit: function(comment) {
+    var comments = this.state.data;
+    var newComments = comments.concat([comment]);
+    this.setState({
+      data:newComments
+    });
+    $.ajax({
+      url:this.props.url,
+      dataType:'json',
+      type:'POST',
+      data:comment,
+      success:function(data){
+        // this.setState({
+        //   data:data.data
+        // });
+      }.bind(this),
+      error:function(xhr,status,err){
+        console.error(this.props.url,status,err.toString());
+      }.bind(this)
+    });
   },
   render:function(){
     return (
     <div className = "CommentBox">
-    <h1>Comment</h1>
     <CommentList data = {this.state.data}/>
-    <CommentForm/></div>
+    <CommentForm onCommentSubmit = {this.handleCommentSubmit}/>
+    </div>
     );
   }
 });

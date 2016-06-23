@@ -26,15 +26,15 @@ var CommentBox = React.createClass({displayName: "CommentBox",
   },
   render:function(){
     return (
-    React.createElement("div", {className: "CommentBox"}, 
-    React.createElement("h1", null, "Comment"), 
-    React.createElement(CommentList, {data: this.state.data}), 
+    React.createElement("div", {className: "CommentBox"},
+    React.createElement("h1", null, "Comment"),
+    React.createElement(CommentList, {data: this.state.data}),
     React.createElement(CommentForm, null))
     );
   }
 });
 
 React.render(
-  React.createElement(CommentBox, {url: "/Users/tanchao/Desktop/ReactDeomo/json/weibo.json", pulltime: 2000}),
+  React.createElement(CommentBox, {url: "./json/weibo.json", pulltime: 2000}),
   document.getElementById('content')
 );
