@@ -1,9 +1,7 @@
-var CommentBox = React.createClass({
+var CommentBox = React.createClass({displayName: "CommentBox",
   loadCommentsFromServer:function(){
-    var nowstr = new Date()
-    var urlstr = this.props.url + "?a="+ nowstr.toString();
     $.ajax({
-      url:urlstr,
+      url:this.props.url,
       dataType:'json',
       success:function(data){
         this.setState({data:data.data});
@@ -26,15 +24,15 @@ var CommentBox = React.createClass({
   },
   render:function(){
     return (
-    <div className = "CommentBox">
-    <h1>Comment</h1>
-    <CommentList data = {this.state.data}/>
-    <CommentForm/></div>
+    React.createElement("div", {className: "CommentBox"}, 
+    React.createElement("h1", null, "Comment"), 
+    React.createElement(CommentList, {data: this.state.data}), 
+    React.createElement(CommentForm, null))
     );
   }
 });
 
 React.render(
-  <CommentBox url = "/Users/tanchao/Desktop/ReactDeomo/json/weibo.json" pulltime={2000} />,
+  React.createElement(CommentBox, {url: "/Users/tanchao/Desktop/ReactDeomo/json/weibo.json", pulltime: 2000}),
   document.getElementById('content')
 );
