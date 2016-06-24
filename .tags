@@ -29,3 +29,4 @@ script	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <script src ="build\/C
 script	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <script src="build\/CommentList.js"><\/script>$/;"	function	line:16
 script	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <script src="build\/CommentForm.js"><\/script>$/;"	function	line:17
 script	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <script src ="build\/CommentBox.js"><\/script>$/;"	function	line:18
+ReactDeomo	/Users/tanchao/Desktop/ReactDeomo/README.md	/^# ReactDeomo$/;"	function	line:1
