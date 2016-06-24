@@ -1,4 +1,4 @@
-var CommentForm = React.createClass({
+var CommentForm = React.createClass({displayName: "CommentForm",
   handleSubmit:function(e){
     e.preventDefault;
     var author = this.refs.authorName.getDOMNode().value.trim();
@@ -16,11 +16,11 @@ var CommentForm = React.createClass({
   },
     render: function() {
         return (
-          <form className = "CommentForm" >
-          <input type="text" ref = "authorName" placeholder = "Your name"/>
-          <textarea  cols = "20" rows = "5"   ref = "textName" placeholder = "Say something..." />
-          <input type="button"  onClick={this.handleSubmit} value="提交" />
-          </form>
+          React.createElement("form", {className: "CommentForm"}, 
+          React.createElement("input", {type: "text", ref: "authorName", placeholder: "Your name"}), 
+          React.createElement("input", {type: "textArea", ref: "textName", placeholder: "Say something..."}), 
+          React.createElement("input", {type: "button", onClick: this.handleSubmit, value: "提交"})
+          )
         );
     }
 });

@@ -18,7 +18,7 @@ var CommentForm = React.createClass({displayName: "CommentForm",
         return (
           React.createElement("form", {className: "CommentForm"}, 
           React.createElement("input", {type: "text", ref: "authorName", placeholder: "Your name"}), 
-          React.createElement("textarea", {cols: "20", rows: "5", ref: "textName", placeholder: "Say something..."}), 
+          React.createElement("textarea", {style: "display:block", cols: "20", rows: "5", ref: "textName", placeholder: "Say something..."}), 
           React.createElement("input", {type: "button", onClick: this.handleSubmit, value: "提交"})
           )
         );

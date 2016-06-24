@@ -11,9 +11,10 @@ title	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <title>Hello React<\/ti
 script	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <script src="build\/react.js"><\/script>$/;"	function	line:6
 script	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <script src="build\/jquery.min.js"><\/script>$/;"	function	line:7
 script	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <script src="http:\/\/cdnjs.cloudflare.com\/ajax\/libs\/showdown\/0.3.1\/showdown.min.js"><\/script>$/;"	function	line:8
-body	/Users/tanchao/Desktop/ReactDeomo/index.html	/^  <body>$/;"	function	line:10
-div	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <div id="content"><\/div>$/;"	function	line:11
-script	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <script src ="build\/Comment.js"><\/script>$/;"	function	line:12
-script	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <script src="build\/CommentList.js"><\/script>$/;"	function	line:13
-script	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <script src="build\/CommentForm.js"><\/script>$/;"	function	line:14
-script	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <script src ="build\/CommentBox.js"><\/script>$/;"	function	line:15
+style	/Users/tanchao/Desktop/ReactDeomo/index.html	/^<style media="screen">$/;"	function	line:9
+body	/Users/tanchao/Desktop/ReactDeomo/index.html	/^  <body>$/;"	function	line:13
+div	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <div id="content"><\/div>$/;"	function	line:14
+script	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <script src ="build\/Comment.js"><\/script>$/;"	function	line:15
+script	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <script src="build\/CommentList.js"><\/script>$/;"	function	line:16
+script	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <script src="build\/CommentForm.js"><\/script>$/;"	function	line:17
+script	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <script src ="build\/CommentBox.js"><\/script>$/;"	function	line:18
