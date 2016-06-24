@@ -1,4 +1,4 @@
-var CommentBox = React.createClass({
+var CommentBox = React.createClass({displayName: "CommentBox",
   loadCommentsFromServer:function(){
     var nowstr = new Date()
     // var urlstr = this.props.url + "?a="+ nowstr.toString();
@@ -47,16 +47,18 @@ var CommentBox = React.createClass({
     });
   },
   render:function(){
+    alert(document.body.scrollHeight);
+    window.scrollTo(0,document.body.scrollHeight);
     return (
-    <div className = "CommentBox" >
-    <CommentList data = {this.state.data}/>
-    <CommentForm onCommentSubmit = {this.handleCommentSubmit}/>
-    </div>
+    React.createElement("div", {className: "CommentBox"}, 
+    React.createElement(CommentList, {data: this.state.data}), 
+    React.createElement(CommentForm, {onCommentSubmit: this.handleCommentSubmit})
+    )
     );
   }
 });
 
 React.render(
-  <CommentBox url = "./json/weibo.json" pulltime={2000} />,
+  React.createElement(CommentBox, {url: "/Users/tanchao/Desktop/ReactDeomo/json/weibo.json", pulltime: 2000}),
   document.getElementById('content')
 );

@@ -1,3 +1,7 @@
+render	/Users/tanchao/Desktop/ReactDeomo/src/CommentList.js	/^    render: function() {$/;"	function	line:2
+CommentList	/Users/tanchao/Desktop/ReactDeomo/src/CommentList.js	/^var CommentList = React.createClass({$/;"	variable	line:1
+render	/Users/tanchao/Desktop/ReactDeomo/src/Comment.js	/^    render: function() {$/;"	function	line:3
+Comment	/Users/tanchao/Desktop/ReactDeomo/src/Comment.js	/^var Comment = React.createClass({$/;"	variable	line:2
 handleSubmit	/Users/tanchao/Desktop/ReactDeomo/src/CommentForm.js	/^  handleSubmit:function(e){$/;"	function	line:2
 render	/Users/tanchao/Desktop/ReactDeomo/src/CommentForm.js	/^    render: function() {$/;"	function	line:17
 CommentForm	/Users/tanchao/Desktop/ReactDeomo/src/CommentForm.js	/^var CommentForm = React.createClass({$/;"	variable	line:1
@@ -11,7 +15,16 @@ success	/Users/tanchao/Desktop/ReactDeomo/src/CommentBox.js	/^      success:func
 error	/Users/tanchao/Desktop/ReactDeomo/src/CommentBox.js	/^      error:function(xhr,status,err){$/;"	function	line:44
 render	/Users/tanchao/Desktop/ReactDeomo/src/CommentBox.js	/^  render:function(){$/;"	function	line:49
 CommentBox	/Users/tanchao/Desktop/ReactDeomo/src/CommentBox.js	/^var CommentBox = React.createClass({$/;"	variable	line:1
-render	/Users/tanchao/Desktop/ReactDeomo/src/CommentList.js	/^    render: function() {$/;"	function	line:2
-CommentList	/Users/tanchao/Desktop/ReactDeomo/src/CommentList.js	/^var CommentList = React.createClass({$/;"	variable	line:1
-render	/Users/tanchao/Desktop/ReactDeomo/src/Comment.js	/^    render: function() {$/;"	function	line:3
-Comment	/Users/tanchao/Desktop/ReactDeomo/src/Comment.js	/^var Comment = React.createClass({$/;"	variable	line:2
+html	/Users/tanchao/Desktop/ReactDeomo/index.html	/^<html>$/;"	function	line:2
+head	/Users/tanchao/Desktop/ReactDeomo/index.html	/^  <head>$/;"	function	line:3
+meta	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <meta charset="utf-8">$/;"	function	line:4
+title	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <title>Hello React<\/title>$/;"	function	line:5
+script	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <script src="build\/react.js"><\/script>$/;"	function	line:6
+script	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <script src="build\/jquery.min.js"><\/script>$/;"	function	line:7
+script	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <script src="http:\/\/cdnjs.cloudflare.com\/ajax\/libs\/showdown\/0.3.1\/showdown.min.js"><\/script>$/;"	function	line:8
+body	/Users/tanchao/Desktop/ReactDeomo/index.html	/^  <body>$/;"	function	line:10
+div	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <div id="content"><\/div>$/;"	function	line:11
+script	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <script src ="build\/Comment.js"><\/script>$/;"	function	line:12
+script	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <script src="build\/CommentList.js"><\/script>$/;"	function	line:13
+script	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <script src="build\/CommentForm.js"><\/script>$/;"	function	line:14
+script	/Users/tanchao/Desktop/ReactDeomo/index.html	/^    <script src ="build\/CommentBox.js"><\/script>$/;"	function	line:15
